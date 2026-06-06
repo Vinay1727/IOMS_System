@@ -1,0 +1,103 @@
+.revenue-chart-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.elevated-chart {
+  /* No background here, handled by DashboardPage.css */
+}
+
+.revenue-chart-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.revenue-chart-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.revenue-chart-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.highlight-text {
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.revenue-chart-body {
+  width: 100%;
+  height: 280px;
+  margin-top: 0.5rem;
+}
+
+/* Glassmorphism Tooltip */
+.glass-tooltip {
+  background: rgba(11, 11, 20, 0.65) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 16px !important;
+  padding: 1rem 1.25rem !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.05) !important;
+}
+
+.chart-tooltip-date {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tooltip-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chart-tooltip-value, .chart-tooltip-trend {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chart-tooltip-trend {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.tooltip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.tooltip-dot.primary {
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.tooltip-dot.secondary {
+  background: var(--success);
+  box-shadow: 0 0 8px var(--success);
+}
